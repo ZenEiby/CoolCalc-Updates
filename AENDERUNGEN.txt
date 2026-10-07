@@ -1,17 +1,9 @@
-## 0.2.8 – 07.10.2026
+## 0.2.9 – 07.10.2026
 Neu
-- Shops & Lieferanten: Lieferantenkataloge im DATANORM-Format einlesen – DATANORM 4.0 (semikolongetrennt, inkl. Preis- und Rabattdatei) und DATANORM 5.0, lose Dateien oder ZIP. Noch nicht unterstützt: DATANORM 4.0 in fester Satzlänge (ohne Semikolon) sowie Rabatt- und Preisdateien im DATANORM-5-Format
-- Import-Vorschau zeigt deutlich, ob der Rabatt schon in der DATANORM enthalten ist oder manuell eingegeben werden muss
-- Shopsuche in der Kalkulation: Lieferantenartikel suchen und mit EK direkt übernehmen
-- Shopvergleich: dasselbe Produkt bei mehreren Lieferanten vergleichen (Rechtsklick auf eine Zeile)
-- Automatische Update-Prüfung bei jedem Start
-- „Was ist neu?“ in der Symbolleiste und unter Hilfe
-- Kälteleitung (R744): max. Druckverlust für Saug- und Flüssigkeitsleitung in K eingeben (Standard 1,5 K / 0,5 K). Die Rohre werden automatisch vergrößert, bis jeder Strang vom Maschinenraum bis zum Verdampfer den Grenzwert einhält; die Umrechnung von K in Druck erfolgt über CoolProp
-- Kälteleitung: Ergebnis zeigt den Druckverlust je Strang in mbar und K mit Status OK / ÜBERSCHRITTEN
-- Raumberechnung: Kälteleistung wahlweise berechnen oder als festen kW-Wert vorgeben (die Berechnung wird dann ausgegraut)
-
-Geändert
-- DATANORM-Ordner werden auch gefunden, wenn die Daten in einem Unterordner liegen
-- Kälteleitung: max. Geschwindigkeiten und max. Druckverluste werden getrennt für TK und NK eingegeben. Getrennte Flüssigkeitsleitungen rechnen mit den Werten ihres Bereichs, gemeinsame Abschnitte mit dem strengeren Wert
-- Zeichnung: Standard-Raumhöhe 3,0 m statt 2,0 m
-- Alle Fenster und Dialoge öffnen mittig über dem Programmfenster
+- Wartung/DHP: neuer Tab zur Kalkulation von Wartung, Wartungsvertrag und Full Service – links die Optionen, rechts sofort die Preispositionen mit EK und VK (inkl. DB wie in der Kalkulation)
+- Wartung nach Berechnungseinheiten (BE): Verdampfer 1 Lüfter = 1 BE, jeder weitere + ¼ BE; Gaskühler/Verflüssiger bis 2 Lüfter = 1 BE, jeder weitere + ½ BE; Preis = BE × Basispreis BE. Die Reinigung des Gaskühlers ist enthalten, eine 2. Reinigung kann zusätzlich gewählt werden
+- DHP (Dichtheitsprüfung) nach BE: je Verdampfer, Verdichter und Gaskühler 1/10 BE
+- Kühlraumreinigung pro m² (Boden, Wände, Decke aus der Raumberechnung), Fühlerkalibrierung, DFÜ, Hebebühne, Fahrtzonen, Sondertechnik und Full Service
+- Preis je Vertragsjahr mit jährlicher Preissteigerung (Standard 7 %)
+- Räume, Flächen und Verdampfer werden aus dem Projekt übernommen
+- Alle Preise und Werte als Grundeinstellung änderbar unter Einstellungen → Optionen → Wartung – Grundeinstellungen & Preise
