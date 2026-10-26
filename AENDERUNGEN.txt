@@ -1,9 +1,28 @@
-## 0.2.9 – 07.10.2026
+## 0.3.0 – 26.10.2026
 Neu
-- Wartung/DHP: neuer Tab zur Kalkulation von Wartung, Wartungsvertrag und Full Service – links die Optionen, rechts sofort die Preispositionen mit EK und VK (inkl. DB wie in der Kalkulation)
-- Wartung nach Berechnungseinheiten (BE): Verdampfer 1 Lüfter = 1 BE, jeder weitere + ¼ BE; Gaskühler/Verflüssiger bis 2 Lüfter = 1 BE, jeder weitere + ½ BE; Preis = BE × Basispreis BE. Die Reinigung des Gaskühlers ist enthalten, eine 2. Reinigung kann zusätzlich gewählt werden
-- DHP (Dichtheitsprüfung) nach BE: je Verdampfer, Verdichter und Gaskühler 1/10 BE
-- Kühlraumreinigung pro m² (Boden, Wände, Decke aus der Raumberechnung), Fühlerkalibrierung, DFÜ, Hebebühne, Fahrtzonen, Sondertechnik und Full Service
-- Preis je Vertragsjahr mit jährlicher Preissteigerung (Standard 7 %)
-- Räume, Flächen und Verdampfer werden aus dem Projekt übernommen
-- Alle Preise und Werte als Grundeinstellung änderbar unter Einstellungen → Optionen → Wartung – Grundeinstellungen & Preise
+- Verbundanlagen im Maschinenraum: Rechtsklick in den Maschinenraum → „Verbundanlage hier zeichnen“, auch mehrere je Maschinenraum. Jede Verbundanlage hat eigene Anschlüsse (Saugleitung NK/TK, gemeinsame oder getrennte Flüssigkeitsleitung, Gaskühler-Anschlusspaare, optional Enthitzer TK und Warmsole), einen eigenen Farbsatz, Gleichzeitigkeit NK/TK und Höhe zur Rohrtrasse
+- Gaskühler und Enthitzer als eigene Geräte auf der Zeichnung (Rechtsklick → „Gaskühler hier zeichnen“ / „Enthitzer hier zeichnen“). Aus Leistung, Druck und Gastemperaturen wird der R744-Massenstrom berechnet; die Kälteleitungsberechnung dimensioniert damit auch Druckgas-, Gaskühler-Austritts- und Enthitzerleitungen. Gaskühler optional als WP-Verdampfer (Anschlüsse WP-FL/WP-SL)
+- Zusammenfassung: neue Spalte „Verbund“ – jeder Raum wird der Verbundanlage zugeordnet, an der seine Verdampfer hängen; Summen und Gleichzeitigkeit je Verbundanlage
+- Maschinenraum kann zugleich gekühlter Raum sein (Klima): Rechtsklick → „Ist auch gekühlter Raum (Klima)“
+- Einstellungen → Optionen → „Komponenten – Standardwerte“: Startwerte für Verbundanlage, Gaskühler und Enthitzer
+- Kalkulation: Montagezeit je Meter für Rohrleitung und Isolierung in den Standardwerten (min/m). Rohr- und Isolierzeilen in m bekommen daraus automatisch Std./Einheit, Montage und Gesamtstunden – von Hand eingetragene Stunden bleiben erhalten
+- Warmsole: mittlere Soletemperatur im Berechnungsfenster; die Stoffwerte werden darauf umgerechnet
+- Warmsole: Druckverlust je Verdampferkreis (VL + RL) und Förderhöhe des ungünstigsten Kreises für die Pumpenauslegung
+- Kälteleitung: Hinweis, wenn eine Saug-Steigleitung zum Verdampfer zu langsam für die Ölrückführung ist, mit Vorschlag für die passende Dimension
+
+Geändert
+- Zeichnung exportieren als PDF: Räume, Leitungen und Texte werden als Vektoren auf den Originalplan gelegt – maßstabsgetreu (vorher ca. 72 % der Originalgröße), gestochen scharf und kaum größer als die Original-PDF
+- Kälteleitung R744: Die Flüssigkeitsleitung wird mit gesättigter Flüssigkeit im Sammler gerechnet statt beim Hochdruck – Massenstrom ca. 2–3 % höher, Rohre können bei einer Neuberechnung eine Dimension größer werden
+- Rohrberechnung: Die gezeichneten 90°-Bögen gehen jetzt in den Druckverlust ein (vorher nur pauschale Bögen)
+- Kälteleitung: Die Höhe vom Verbund zur Rohrtrasse zählt in der Flüssigkeitsleitung als Steighöhe zum Druckverlust (5 m ≈ 0,4 K)
+- Druckgas und Gaskühler-Austritt mit K65 nur noch aus dem 120-bar-Programm (bis 2 1/8"); Warnung, wenn für Hochdruckleitungen Kupfer gewählt ist
+- Glysofor L: Stoffwerte jetzt aus der Herstellerspezifikation (vorher Näherungswerte) – der angezeigte Warmsole-Druckverlust kann sich dadurch ändern, die Dimensionen nicht
+- Raumberechnung: Im AUTO-Modus gelten für Belegungshöhe, Belegungsfaktor und Wechselrate die Standardwerte aus den Optionen; die Tooltips zeigen die verwendeten Werte. Geänderte Standardwerte überschreiben manuell eingegebene Werte nicht mehr
+- Isolierung für K65-Rohre in der nächstliegenden mm-Größe (z. B. 1/2" → 12 mm)
+- DXF-Export mit eigenen Ebenen je Leitungsart, Verbundanlagen und Gaskühlern
+
+Behoben
+- Projekt speichern ist abgesichert: Bricht das Speichern ab, bleibt die bisherige Datei erhalten; der vorige Stand liegt zusätzlich als „.bak“ daneben
+- Eine bereits geladene Plan-PDF wird nicht mehr bei jedem Laden erneut in den Datenordner kopiert
+- Kalkulation: Von Hand eingetragene Stunden gingen nach dem Laden eines Projekts beim nächsten Speichern verloren
+- Raumformular öffnet schneller
