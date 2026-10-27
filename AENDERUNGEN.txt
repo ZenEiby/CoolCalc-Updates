@@ -1,3 +1,15 @@
+## 0.3.1 – 27.10.2026
+Neu
+- Verdampfer und Gaskühler lassen sich per Rechtsklick → „Verbundanlage zuweisen“ einer Verbundanlage zuordnen. Sie bekommen sofort deren Farbsatz und Anschlussfarben; angeschlossene Leitungen werden mit umgefärbt. „Keine Zuweisung“ hebt das wieder auf
+
+Geändert
+- Wandbuchstaben stehen jetzt innen im Raum neben der Wand statt auf der Wandlinie und überdecken sich nicht mehr mit den Buchstaben angrenzender Räume
+- Gelöschte Verknüpfungsnummern werden wieder vergeben: Eine neue Verknüpfung bekommt die kleinste freie Nummer
+
+Behoben
+- Beim Abschließen einer Rohrleitung konnte versehentlich eine Verknüpfung entstehen. Verknüpfungen gibt es jetzt nur noch, wenn Sie sie selbst über „Rohrleitung verknüpfen“ setzen
+- Leitungen unterschiedlicher Verbundanlagen (z. B. SL Verbund 1 und SL Verbund 2) lassen sich weder direkt noch über eine Verknüpfung oder zugewiesene Verdampfer/Gaskühler miteinander verbinden
+
 ## 0.3.0 – 26.10.2026
 Neu
 - Verbundanlagen im Maschinenraum: Rechtsklick in den Maschinenraum → „Verbundanlage hier zeichnen“, auch mehrere je Maschinenraum. Jede Verbundanlage hat eigene Anschlüsse (Saugleitung NK/TK, gemeinsame oder getrennte Flüssigkeitsleitung, Gaskühler-Anschlusspaare, optional Enthitzer TK und Warmsole), einen eigenen Farbsatz, Gleichzeitigkeit NK/TK und Höhe zur Rohrtrasse
