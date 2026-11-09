@@ -1,40 +1,24 @@
-## 0.3.1 – 27.10.2026
+## 0.3.2 – 09.11.2026
 Neu
-- Verdampfer und Gaskühler lassen sich per Rechtsklick → „Verbundanlage zuweisen“ einer Verbundanlage zuordnen. Sie bekommen sofort deren Farbsatz und Anschlussfarben; angeschlossene Leitungen werden mit umgefärbt. „Keine Zuweisung“ hebt das wieder auf
+- Steigleitungen auf Kälte- und Warmsoleleitungen: Rechtsklick auf die Leitung → „Steigleitung hier einfügen“. Der magenta Punkt zeigt die Höhe; sie zählt zu den Rohrmetern des Abschnitts. Kälte-Saugleitung, Druckgas und Enthitzer-Vorlauf werden dort auf Ölmitnahme geprüft, auch in Sammelleitungen
+- Ganzen Plan drehen: Räume, Leitungen, Maschinenräume und Geräte drehen mit
+- Tabellen: Zeilen kopieren, ausschneiden und einfügen, auch aus einem offenen Eingabefeld
+- Plan-PDFs und PDF-Anhänge werden in die Projektdatei eingebettet, Projekte lassen sich so vollständig weitergeben
+- Hilfe → FAQ: alle Berechnungen mit ihren Formeln
+- Gaskühler und Enthitzer: Anschlussseite wählbar
+- Raumberechnung: Personenlast nach Raumtemperatur und neues Feld „Heizung Dauer h/d“ (neue Räume starten mit 2 h/d, alte Projekte rechnen weiter mit 24 h/d)
+- Kälte- und Warmsole-Optionen: Tooltips zu den maximalen Geschwindigkeiten
 
 Geändert
-- Wandbuchstaben stehen jetzt innen im Raum neben der Wand statt auf der Wandlinie und überdecken sich nicht mehr mit den Buchstaben angrenzender Räume
-- Gelöschte Verknüpfungsnummern werden wieder vergeben: Eine neue Verknüpfung bekommt die kleinste freie Nummer
+- Material übernehmen: Rohre und Isolierung kommen mit Artikelnummer aus der Preisliste; vorhandene Zeilen werden erkannt und ergänzt
+- Materialliste: gleiche Positionen mehrerer Zeichnungen werden addiert, verknüpfte Blätter zählen einmal, nicht mehr benötigte Formteile werden abgeglichen
+- Montagezeit je Position in der Preisliste statt pauschal in den Optionen
+- Kalkulation: Auswahl von Rohrart, Isolierung und MSR-Steuerung entfällt
+- Ölrückführung: Eine kleinere Steigleitung wird nur noch vorgeschlagen, wenn sie die maximale Geschwindigkeit bei Volllast einhält; die Verdichter-Teillast gilt nur noch für gemeinsam genutzte Abschnitte. Gleiche Hinweise mehrerer Verdampfer stehen in einer Zeile
+- K65 2 5/8" gehört zum 120-bar-Programm
+- Zeichnungs-Tab: kompakter Kopf, schmale Raumliste, eigene Symbole
 
 Behoben
-- Beim Abschließen einer Rohrleitung konnte versehentlich eine Verknüpfung entstehen. Verknüpfungen gibt es jetzt nur noch, wenn Sie sie selbst über „Rohrleitung verknüpfen“ setzen
-- Leitungen unterschiedlicher Verbundanlagen (z. B. SL Verbund 1 und SL Verbund 2) lassen sich weder direkt noch über eine Verknüpfung oder zugewiesene Verdampfer/Gaskühler miteinander verbinden
-
-## 0.3.0 – 26.10.2026
-Neu
-- Verbundanlagen im Maschinenraum: Rechtsklick in den Maschinenraum → „Verbundanlage hier zeichnen“, auch mehrere je Maschinenraum. Jede Verbundanlage hat eigene Anschlüsse (Saugleitung NK/TK, gemeinsame oder getrennte Flüssigkeitsleitung, Gaskühler-Anschlusspaare, optional Enthitzer TK und Warmsole), einen eigenen Farbsatz, Gleichzeitigkeit NK/TK und Höhe zur Rohrtrasse
-- Gaskühler und Enthitzer als eigene Geräte auf der Zeichnung (Rechtsklick → „Gaskühler hier zeichnen“ / „Enthitzer hier zeichnen“). Aus Leistung, Druck und Gastemperaturen wird der R744-Massenstrom berechnet; die Kälteleitungsberechnung dimensioniert damit auch Druckgas-, Gaskühler-Austritts- und Enthitzerleitungen. Gaskühler optional als WP-Verdampfer (Anschlüsse WP-FL/WP-SL)
-- Zusammenfassung: neue Spalte „Verbund“ – jeder Raum wird der Verbundanlage zugeordnet, an der seine Verdampfer hängen; Summen und Gleichzeitigkeit je Verbundanlage
-- Maschinenraum kann zugleich gekühlter Raum sein (Klima): Rechtsklick → „Ist auch gekühlter Raum (Klima)“
-- Einstellungen → Optionen → „Komponenten – Standardwerte“: Startwerte für Verbundanlage, Gaskühler und Enthitzer
-- Kalkulation: Montagezeit je Meter für Rohrleitung und Isolierung in den Standardwerten (min/m). Rohr- und Isolierzeilen in m bekommen daraus automatisch Std./Einheit, Montage und Gesamtstunden – von Hand eingetragene Stunden bleiben erhalten
-- Warmsole: mittlere Soletemperatur im Berechnungsfenster; die Stoffwerte werden darauf umgerechnet
-- Warmsole: Druckverlust je Verdampferkreis (VL + RL) und Förderhöhe des ungünstigsten Kreises für die Pumpenauslegung
-- Kälteleitung: Hinweis, wenn eine Saug-Steigleitung zum Verdampfer zu langsam für die Ölrückführung ist, mit Vorschlag für die passende Dimension
-
-Geändert
-- Zeichnung exportieren als PDF: Räume, Leitungen und Texte werden als Vektoren auf den Originalplan gelegt – maßstabsgetreu (vorher ca. 72 % der Originalgröße), gestochen scharf und kaum größer als die Original-PDF
-- Kälteleitung R744: Die Flüssigkeitsleitung wird mit gesättigter Flüssigkeit im Sammler gerechnet statt beim Hochdruck – Massenstrom ca. 2–3 % höher, Rohre können bei einer Neuberechnung eine Dimension größer werden
-- Rohrberechnung: Die gezeichneten 90°-Bögen gehen jetzt in den Druckverlust ein (vorher nur pauschale Bögen)
-- Kälteleitung: Die Höhe vom Verbund zur Rohrtrasse zählt in der Flüssigkeitsleitung als Steighöhe zum Druckverlust (5 m ≈ 0,4 K)
-- Druckgas und Gaskühler-Austritt mit K65 nur noch aus dem 120-bar-Programm (bis 2 1/8"); Warnung, wenn für Hochdruckleitungen Kupfer gewählt ist
-- Glysofor L: Stoffwerte jetzt aus der Herstellerspezifikation (vorher Näherungswerte) – der angezeigte Warmsole-Druckverlust kann sich dadurch ändern, die Dimensionen nicht
-- Raumberechnung: Im AUTO-Modus gelten für Belegungshöhe, Belegungsfaktor und Wechselrate die Standardwerte aus den Optionen; die Tooltips zeigen die verwendeten Werte. Geänderte Standardwerte überschreiben manuell eingegebene Werte nicht mehr
-- Isolierung für K65-Rohre in der nächstliegenden mm-Größe (z. B. 1/2" → 12 mm)
-- DXF-Export mit eigenen Ebenen je Leitungsart, Verbundanlagen und Gaskühlern
-
-Behoben
-- Projekt speichern ist abgesichert: Bricht das Speichern ab, bleibt die bisherige Datei erhalten; der vorige Stand liegt zusätzlich als „.bak“ daneben
-- Eine bereits geladene Plan-PDF wird nicht mehr bei jedem Laden erneut in den Datenordner kopiert
-- Kalkulation: Von Hand eingetragene Stunden gingen nach dem Laden eines Projekts beim nächsten Speichern verloren
-- Raumformular öffnet schneller
+- T-Stücke an Kreuzungen: Ein Knoten mit vier Abschnitten zählt jetzt zwei T-Stücke statt einem
+- Räume ohne Namen starten mit 0 Türen
+- Fenster und Tooltips erscheinen nicht mehr kurz oben links auf dem Bildschirm
