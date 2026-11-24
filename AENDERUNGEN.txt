@@ -19,6 +19,33 @@
 # Behoben
 # - ...
 
+## 0.3.4 – 24.11.2026
+Neu
+- Neue Oberfläche ist jetzt das Standard-CoolCalc: Seitenleiste mit allen Bereichen, Hell/Dunkel und Farbschemata (Firmenfarben, Vintage, wie System), Startbild beim Programmstart, automatisches Speichern alle 5 Minuten. Lizenz, Einstellungen und Datenbanken bleiben erhalten
+- Übersicht mit Verbund je Raum und Summen nach Gleichzeitigkeit, Raum suchen in der Raumliste
+- Einstellungen → Stammdaten → Waren: Waren bearbeiten, neue Kategorien anlegen; Angebotsvorlage wählbar
+- Zeichnung: Knopf „Anfrage“ mit allen Verdampfern, Gaskühlern und Enthitzern als Positionen, Export nach Excel
+- Rohrnetz: Ergebnis erst als Vorschau mit „Übernehmen“ oder „Abbrechen“; WRG-Modul im Maschinenraum, Pufferspeicher, Warmsole in Lade- und Entladekreisen
+- Füllmengen: Kältemittel nach Aggregatzustand, Wasser/Sole je Kreis, Speicher und Verdampfer – als eigener Reiter im Ergebnisfenster und im Material
+- Rohrschellen aus der Rohrberechnung (je angefangene 1,5 m eine Schelle, Abstand unter Stammdaten → Komponenten-Standards)
+- Sicherheitsventile und Abblaseleitung CO₂ nach DIN EN 13136 (offene Beta): mehrere Ventile an einer Abblaseleitung, Ventile frei benennbar (z. B. „MD SV“)
+- Excel- und PDF-Bericht neu: Deckblatt, Zusammenfassung mit Verbunden, Raumberechnung, Zeichnung, Kalkulation mit Summen, Materialliste, Zeitplan
+- Kalkulation: Summenzeile unter jeder Tabelle (Material EK, Stunden, Montage, Gesamtergebnis), auch je Kühlraum
+- Zeitplan: Felder markieren (Strg/Shift+Klick), Farbe kopieren und einfügen, Zeilen per Drag & Drop verschieben, X je Zeile zum Löschen
+
+Geändert
+- Programmstart mit leerem Projekt, nur mit den Standardwerten aus den Optionen
+- Zeitplan: Entf leert das Feld unter der Maus, ohne es vorher anzuklicken. Wochenspalten schmaler, Legende und Bedienhinweis unter dem Plan
+- Kalkulation: Knöpfe + / − / X so hoch wie die Suchfelder daneben
+- Verdampfer, Gaskühler und Enthitzer mit runden Ecken und Lüftern; Gaskühler ab 4 Lüftern als Reihe oder Block
+- Drucken: Ansichten wählen, als PDF speichern oder direkt auf einem Drucker ausgeben
+- Wartung/DHP ist noch in Entwicklung und nicht mehr in der ausgelieferten Version
+
+Behoben
+- Raumoptionen überschrieben beim Speichern den Typ aller Verdampfer im Raum
+- Hell/Dunkel-Wechsel ließ einzelne Bereiche in der alten Farbe stehen
+- Rechtsklick-Menüs der Zeichnung schlossen bei Klick daneben nicht
+
 ## 0.3.3 – 16.11.2026
 Neu
 - Komponenten – Standardwerte: auch für Verdampfer (Länge, Breite, Höhenunterschied zur Trasse, T0 und Überhitzung je NK/TK). Der Höhenunterschied lässt sich jetzt schon beim Setzen des Verdampfers eintragen
