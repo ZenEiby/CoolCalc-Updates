@@ -19,6 +19,19 @@
 # Behoben
 # - ...
 
+## 0.3.5.1 – 25.11.2026
+Neu
+- Katalog nach Kategorien: Artikel aller Shops werden automatisch einem gemeinsamen Kategoriebaum zugeordnet (Ventile, Rohr & Fittinge, Befestigung, Isolierung …) – Material finden, auch wenn man den Artikelnamen nicht kennt. In der Kalkulation über „Kategorien …“ neben „Kältefachhandel“, mit Suche, Shopfilter und Shopvergleich
+- Shops & Lieferanten: Anteil zugeordneter Artikel je Shop, „Kategorien zuordnen …“ für offene Warengruppen, eigene Kategorien und eigene Stichwörter (gelten für alle Shops)
+- Zeichnung: Lüfter am Verdampfer wählbar – an der Längsseite gegenüber den Anschlüssen, auf der Anschlussseite oder mittig (beidseitig ausblasend, runde Lüfter wie beim Gaskühler)
+
+Geändert
+- Ladeanzeige beim Öffnen und Speichern: bleibt gleich groß (lange Dateinamen werden in der Mitte gekürzt), saubere runde Ecken und ein weicher Schatten, damit sie sich vom Hintergrund abhebt – auch bei der Meldung „Projekt geladen“
+- Update-Prüfung kennt Zwischenpatches (z. B. 0.3.5.1)
+
+Behoben
+- Ladeanzeige: beim Wechsel auf einen kürzeren Text blieben Reste des vorherigen Texts stehen
+
 ## 0.3.4 – 24.11.2026
 Neu
 - Neue Oberfläche ist jetzt das Standard-CoolCalc: Seitenleiste mit allen Bereichen, Hell/Dunkel und Farbschemata (Firmenfarben, Vintage, wie System), Startbild beim Programmstart, automatisches Speichern alle 5 Minuten. Lizenz, Einstellungen und Datenbanken bleiben erhalten
